@@ -75,7 +75,7 @@ function currentWeather(city) {
 }
 
 function forecast(city) {
-    // fetch request to weather map
+    // Fetch request to weather map
     const requestUrl =
         "https://api.openweathermap.org/data/2.5/forecast?q=" +
         city +
@@ -90,7 +90,7 @@ function forecast(city) {
             var fiveDayData = data.list.filter((day) =>
                 day.dt_txt.includes("12:00:00")
             );
-            // displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+            // displays the date, icon representing  weather conditions, temperature, wind speed, humidity
             console.log(fiveDayData);
             for (var i = 0; i < fiveDayData.length; i++) {
 

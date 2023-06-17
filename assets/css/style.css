@@ -1,0 +1,65 @@
+:root {
+    --dark: #31634A;
+    --medgreen: #6FE3A9;
+    --lightgreen: #B7E8CF;
+    --navygreen: #19663F;
+    --pastelgreen: #56B083;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--lightgreen);
+}
+
+h2 {
+    color: var(--navygreen);
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark);
+    color: var(--medgreen);
+    font-size: 2em;
+    padding: 5px;
+    margin: 50px;
+}
+
+#citySearch {
+    padding: 10px;
+    border: var(--dark) 1px solid;
+}
+
+#cityHistory {
+    margin: 10px;
+    padding: 10px;
+    border: var(--dark) 1px solid;
+}
+
+#current {
+    padding: 10px;
+    margin: 10px;
+    border: var(--dark) 3px solid;
+}
+
+#fiveDay {
+    padding: 10px;
+    margin: 10px;
+    border: var(--dark) 3px solid;
+}
+
+#history li {
+    text-align: center;
+    cursor: pointer;
+    list-style-type: none;
+    border: grey solid 3px;
+    color: white;
+    background-color: var(--lightgreen);
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.card {
+    background-color: var(--pastelgreen);
+    color: white;
+}
